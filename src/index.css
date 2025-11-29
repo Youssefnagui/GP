@@ -1,0 +1,15 @@
+/* Global resets and variables
+   This file provides app-wide defaults; component-specific styles go in .module.css files. */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #f8fafc; }
+
+/* Color tokens used across auth components (kept simple) */
+:root{
+  --brand-500:#2563eb;  /* primary brand */
+  --brand-600:#1d4ed8;  /* primary hover */
+  --ink:#0f172a;        /* dark text */
+  --muted:#64748b;      /* secondary text */
+  --card:#ffffff;       /* card background */
+  --ring:#bfdbfe;       /* focus ring */
+}

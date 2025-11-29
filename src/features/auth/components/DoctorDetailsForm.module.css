@@ -1,0 +1,15 @@
+.form{ display:grid; gap:16px; }
+.row2{ display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+@media (max-width: 900px){ .row2{ grid-template-columns: 1fr; } }
+
+.field{ display:block; }
+.label{ font-size:14px; color:#334155; }
+.input{
+  margin-top:6px; width:100%; padding:10px 12px;
+  border:1px solid #cbd5e1; border-radius:10px; outline:none;
+  transition:border-color .15s, box-shadow .15s;
+  background:#fff;
+}
+.input:focus{ border-color:#2563eb; box-shadow:0 0 0 6px #bfdbfe; }
+
+.err{ margin-top:6px; color:#b91c1c; font-size:13px; }
